@@ -1,0 +1,40 @@
+# CodeBook
+
+## This code is designed to extract a tidy dataset out of data collected from accelerometers of Samsung Galaxy S phones worn on the
+## waists of participants while doing certain activities.  A set of measurements was taken from each phone for each activity.
+## This code extracts the average of each measurement for each activity and each participant.
+## Brief summary of the raw data:
+      -There are 30 participants numbered 1:30
+      -There are 6 activities: {Walking, Walking Upstairs, Walking Downstairs, Sitting, Standing, Laying}
+      -There are 33 core meansurements taken from the smartphones:
+       *Note: Each measurement followed by "-XYZ" is actually three measurements, one for each axis.
+          +tBodyAcc-XYZ
+          +tGravityAcc-XYZ
+          +tBodyAccJerk-XYZ
+          +tBodyGyro-XYZ
+          +tBodyGyroJerk-XYZ
+          +tBodyAccMag
+          +tGravityAccMag
+          +tBodyAccJerkMag
+          +tBodyGyroMag
+          +tBodyGyroJerkMag
+          +fBodyAcc-XYZ
+          +fBodyAccJerk-XYZ
+          +fBodyGyro-XYZ
+          +fBodyAccMag
+          +fBodyAccJerkMag
+          +fBodyGyroMag
+          +fBodyGyroJerkMag
+
+## Explanation of transformations:
+ 1. Data is downloaded
+ 2. Training and test datasets are combined into one data table(Variable "DT")
+    This satisfies step 1 of the assignment instructions
+ 3. Features dataset is loaded and applied to the names vector of DT giving the variables descriptive names
+    This satisfies step 4 of the assignment instructions
+ 4. Columns containing mean and stdev data for the measurements are extracted and stored in separate data table (Variable "DT2")
+    This satisfies step 2 of the assignment instructions
+ 5. Subject and activity data are loaded, modified to have descriptive names and combined into two data tables (Variables "DTS" and "DTA")
+    This satisfies step 3 of the assignment instructions
+ 6. Averages are taken by subject and by activity and results are combined into single dataset (Variable "DTT")
+    This satisfies step 5 of the assignment instructions
