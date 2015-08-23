@@ -39,7 +39,7 @@
  6. Averages are taken by subject and by activity and results are combined into single dataset (Variable "DTT")
     This satisfies step 5 of the assignment instructions
 
-## Variable Descriptions:
+## Variable Descriptions (Taken directly from UCI HAR Dataset codeBook (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and
 tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then 
 they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 
